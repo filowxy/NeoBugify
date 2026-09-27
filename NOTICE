@@ -1,0 +1,68 @@
+NeoBugify — a modified version of Debugify
+===========================================
+
+NeoBugify is a modified version of Debugify 1.21.1+1.0 by isXander
+(https://github.com/isXander/Debugify), obtained from that project's
+archive/1.21 branch. NeoBugify is not affiliated with or endorsed by the
+original author.
+
+Licensed under the GNU Lesser General Public License, version 3 only.
+The full license text is in LICENSE. NeoBugify is distributed in the hope
+that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+Notice of modification (GNU GPL v3 section 5(a), incorporated by LGPL v3)
+----------------------------------------------------------------------------
+
+This program is a modified version of Debugify 1.21.1+1.0. It was modified
+on 26 September 2026 as follows:
+
+  * Ported the mod loader from Fabric to NeoForge 21.1: fabric-loom ->
+    net.neoforged.moddev, fabric.mod.json -> META-INF/neoforge.mods.toml,
+    debugify.accesswidener -> META-INF/accesstransformer.cfg, and the
+    mixin refmaps were dropped because NeoForge runs on official Mojang
+    mappings.
+  * Replaced the Fabric entrypoints (ModInitializer, ClientModInitializer,
+    the modmenu entrypoint) with an @Mod class, an FMLClientSetupEvent
+    listener and NeoForge's IConfigScreenFactory extension point.
+  * Replaced FabricLoader and mod-container API calls with FML's ModList,
+    FMLPaths and FMLEnvironment, null safe for the early mixin plugin.
+  * Replaced Debugify's "debugify" entrypoint mechanism for DebugifyApi
+    with an explicit Debugify.registerApi(modId, api) registry, because
+    NeoForge has no equivalent of Fabric's entrypoint containers.
+  * Repointed the mixin members whose targets NeoForge's patched
+    Minecraft classes moved or renamed, notably MC-121706, MC-577,
+    MC-176559 and MC-93384. See PORTING-NOTES.md.
+  * Renamed the mod from debugify to neobugify, including its display
+    name, jar name, icon, configuration file names, translation namespace
+    and option key, and set the license to LGPL-3.0-only.
+  * Removed the Fabric-only ModMenu integration.
+
+No copyright, licence or warranty notices from the original work were
+removed. Debugify's own acknowledgements are retained in
+META-INF/neoforge.mods.toml.
+
+
+Third party notices, carried over from Debugify
+-----------------------------------------------
+
+  j-Tai's TieFix                          LGPLv3
+  FlashyReese's Sodium Extra              LGPLv3
+  Ampflower's 2x2 Surrounded Saplings Fix Zlib
+
+Each source file states its own licence with an SPDX-License-Identifier
+header. All of them are LGPL-3.0-only except one: dev/isxander/debugify/
+mixins/gameplay/mc8187/MixinTreeFeature.java is Ampflower's 2x2
+Surrounded Saplings Fix, which is Zlib licensed, and whose original
+copyright notice has been left exactly as it was. No notice belonging to
+the original work was altered or removed.
+
+
+Corresponding source
+--------------------
+
+The complete corresponding source of this mod is distributed alongside
+it, as NeoBugify-<version>-sources.jar, and in the project repository.
+Anyone conveying the NeoBugify jar must convey that source as well, under
+this same licence.

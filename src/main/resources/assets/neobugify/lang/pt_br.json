@@ -1,0 +1,22 @@
+{
+  "neobugify.name": "NeoBugify",
+  "neobugify.basic": "Correções básicas",
+  "neobugify.gameplay": "Correções de jogabilidade",
+  "neobugify.gameplay.warning": "AVISO: Esta categoria contém correções que podem ser uma vantagem injusta!",
+  "neobugify.gameplay.enable_in_multiplayer": "Ativar no Multiplayer",
+  "neobugify.fix.enabled": "consertado",
+  "neobugify.fix.disabled": "Não consertado",
+  "neobugify.fix.unavailable": "Indisponível",
+  "neobugify.error.os": "%s aplica-se apenas a %s",
+  "neobugify.os.windows": "Windows",
+  "neobugify.os.macos": "macOS",
+  "neobugify.os.linux": "Linux",
+  "neobugify.os.solaris": "Solaris",
+  "neobugify.misc": "Diversos",
+  "neobugify.misc.default_disabled": "Padrão para Desativado",
+  "neobugify.misc.default_disabled.description": "Novas correções de bug padrão a serem desabilitadas em vez de habilitadas.",
+  "neobugify.env.client": "Cliente",
+  "neobugify.env.server": "Servidor",
+  "neobugify.no_yacl.title": "YetAnotherConfigLib não instalado!",
+  "neobugify.no_yacl.description": "Para configurar o NeoBugify usando uma GUI, você deve instalar o %s, esta é a biblioteca usada para disponibilizar esta funcionalidade. Caso contrário, você pode configurar usando o arquivo JSON armazenado em '%s'."
+}

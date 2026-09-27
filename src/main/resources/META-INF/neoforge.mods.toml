@@ -1,0 +1,71 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+# NeoBugify is distributed under the GNU Lesser General Public License v3.0 only.
+license = "LGPL-3.0-only"
+issueTrackerURL = "https://bugs.mojang.com/"
+
+[[mods]]
+modId = "neobugify"
+version = "${version}"
+displayName = "NeoBugify"
+logoFile = "neobugify.png"
+authors = "filowxy"
+description = '''
+NeoBugify fixes bugs reported on the Minecraft bug tracker. Each fix is individually
+toggleable and links to its bug report with a plain explanation of what it changes.
+
+Fixes are grouped into Basic, Gameplay and Misc categories. Gameplay fixes are disabled
+by default in multiplayer unless you opt in, as some of them may be an unfair advantage.
+
+NeoBugify is a modified version of Debugify 1.21.1+1.0 by isXander, ported from Fabric
+to NeoForge. It is not affiliated with or endorsed by the original author. The changes
+made to the original work, and the third party notices carried over from it, are listed
+in the NOTICE file shipped with the mod.
+
+Distributed under the GNU Lesser General Public License version 3 only.
+
+Debugify's code was itself based on:
+j-Tai's TieFix - Code used licensed under LGPLv3
+FlashyReese's Sodium Extra - Code used licensed under LGPLv3
+Ampflower's 2x2 Surrounded Saplings Fix - Code used licensed under Zlib
+'''
+
+[[mixins]]
+config = "neobugify.mixins.json"
+
+[[mixins]]
+config = "neobugify.client.mixins.json"
+
+# Replaces the original debugify.accesswidener: the telemetry screen's content classes and
+# Options.FieldAccess are package private in vanilla.
+[[accessTransformers]]
+file = "META-INF/accesstransformer.cfg"
+
+# NeoBugify is built and tested against Minecraft 1.21.1 on the NeoForge 21.1.x line, and
+# deliberately does not claim the rest of 1.21.x. The mixins name vanilla members literally
+# (NeoForge has no refmap to remap them), and those members move between 1.21.x releases:
+# ArmorStand#hurt and Boat#tick are already gone in 1.21.4, and in 1.21.11 Boat, Util,
+# MouseHandler#onPress and Gui#renderExperienceBar are gone too. A wider range would let the
+# mod load on a version where those mixins cannot apply, which is a hard failure, not a
+# degraded one. Widen these ranges only after building and testing against those versions.
+[[dependencies.neobugify]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,21.2.0)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.neobugify]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+# Optional: only needed for the config screen, the mod works without it.
+[[dependencies.neobugify]]
+modId = "yet_another_config_lib_v3"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "CLIENT"

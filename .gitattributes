@@ -1,0 +1,16 @@
+# Normalize line endings in the repository to LF, and check them out as LF on
+# every platform including Windows. Without this, core.autocrlf=true rewrites
+# LF to CRLF in the working tree, which would edit the LGPL text in LICENSE
+# after checkout. The license file is meant to stay byte identical to upstream
+# Debugify's copy, so it must not be touched by line ending conversion.
+* text=auto eol=lf
+
+# The LGPL text and the modification notice are verbatim legal documents.
+# Never let a filter, diff driver or EOL conversion alter them.
+LICENSE -text
+NOTICE -text
+
+# Binary files.
+*.jar binary
+*.png binary
+*.zip binary

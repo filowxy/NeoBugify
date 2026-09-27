@@ -1,0 +1,12 @@
+{
+  "neobugify.name": "NeoBugify",
+  "neobugify.basic": "Temel Düzeltmeler",
+  "neobugify.gameplay": "Oynanış Düzeltmeleri",
+  "neobugify.gameplay.warning": "UYARI: Bu kategori, haksız bir avantaj olabilecek düzeltmeler içeriyor!",
+  "neobugify.gameplay.enable_in_multiplayer": "Çok Oyunculuda Etkinleştir",
+  "neobugify.misc": "Diğer",
+  "neobugify.misc.default_disabled": "Varsayılan Olarak Devre Dışı",
+  "neobugify.misc.default_disabled.description": "Varsayılan: Etkinleştirmek yerine devre dışı bırakılacak yeni hata düzeltmeleri.",
+  "neobugify.env.client": "İstemci",
+  "neobugify.env.server": "Sunucu"
+}

@@ -1,0 +1,22 @@
+{
+  "neobugify.name": "NeoBugify",
+  "neobugify.basic": "Основні виправлення",
+  "neobugify.gameplay": "Виправлення ігроладу",
+  "neobugify.gameplay.warning": "УВАГА: Ця категорія містить виправлення, які можуть бути нечесною перевагою!",
+  "neobugify.gameplay.enable_in_multiplayer": "Увімкнути в мережевій грі",
+  "neobugify.fix.enabled": "Виправлено",
+  "neobugify.fix.disabled": "Не виправлено",
+  "neobugify.fix.unavailable": "Недоступно",
+  "neobugify.error.os": "%s стосується лише %s",
+  "neobugify.os.windows": "Windows",
+  "neobugify.os.macos": "macOS",
+  "neobugify.os.linux": "Linux",
+  "neobugify.os.solaris": "Solaris",
+  "neobugify.misc": "Різне",
+  "neobugify.misc.default_disabled": "За замовчуванням вимкнено",
+  "neobugify.misc.default_disabled.description": "Нові виправлення помилок за замовчуванням мають бути вимкнені, а не ввімкнені.",
+  "neobugify.env.client": "Клієнт",
+  "neobugify.env.server": "Сервер",
+  "neobugify.no_yacl.title": "YetAnotherConfigLib не встановлено!",
+  "neobugify.no_yacl.description": "Щоб налаштувати NeoBugify за допомогою інтерфейсу, ви повинні встановити %s. Це бібліотека, яка використовується для надання цієї функції. В іншому разі ви можете налаштувати за допомогою файлу JSON, який зберігається в '%s'."
+}

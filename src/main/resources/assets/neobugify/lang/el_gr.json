@@ -1,0 +1,12 @@
+{
+  "neobugify.name": "NeoBugify",
+  "neobugify.basic": "Βασικές Διορθώσεις",
+  "neobugify.gameplay": "Διορθώσεις Gameplay",
+  "neobugify.gameplay.warning": "ΠΡΟΣΟΧΗ: Αυτή η κατηγορία περιέχει διορθώσεις οι οποίες μπορεί να σου δίνουν άδικα πλεονέκτηματα!",
+  "neobugify.gameplay.enable_in_multiplayer": "Ενεργοποίηση στο Παιχνίδι Πολλαπλών Παικτών",
+  "neobugify.misc": "Διάφορα",
+  "neobugify.misc.default_disabled": "Αυτόματη Απενεργοποίηση",
+  "neobugify.misc.default_disabled.description": "Απενεργοποιεί τις νεές προσθήκες διορθώσεων.",
+  "neobugify.env.client": "Πελάτη",
+  "neobugify.env.server": "Διακομιστή"
+}

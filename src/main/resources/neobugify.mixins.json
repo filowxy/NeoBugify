@@ -1,0 +1,42 @@
+{
+  "required": true,
+  "package": "dev.isxander.debugify.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "injectors": {
+    "defaultRequire": 1,
+    "maxShiftBy": 2
+  },
+  "plugin": "dev.isxander.debugify.mixinplugin.MixinPlugin",
+  "mixins": [
+    "basic.mc100991.FishingHookMixin",
+    "basic.mc100991.ProjectileMixin",
+    "basic.mc119417.ServerPlayerMixin",
+    "basic.mc119754.FireworkRocketEntityMixin",
+    "basic.mc121706.RangedBowAttackGoalMixin",
+    "basic.mc121903.MinecraftCommandBlockMixin",
+    "basic.mc129909.ServerPlayerMixin",
+    "basic.mc132878.ArmorStandMixin",
+    "basic.mc135971.AbstractContainerMenuMixin",
+    "basic.mc155509.PufferfishMixin",
+    "basic.mc160095.CactusBlockMixin",
+    "basic.mc179072.SwellGoalMixin",
+    "basic.mc183990.MobMixin",
+    "basic.mc199467.MthMixin",
+    "basic.mc200418.ZombieVillagerMixin",
+    "basic.mc2025.EntityMixin",
+    "basic.mc206922.EntityMixin",
+    "basic.mc206922.ItemEntityMixin",
+    "basic.mc215530.ServerPlayerMixin",
+    "basic.mc223153.BlocksMixin",
+    "basic.mc224729.ChunkMapMixin",
+    "basic.mc231743.FlowerPotBlockMixin",
+    "basic.mc232869.StriderMixin",
+    "basic.mc30391.LivingEntityMixin",
+    "basic.mc69216.ServerPlayerMixin",
+    "basic.mc7569.RconConsoleSourceMixin",
+    "basic.mc88371.DragonLandingPhaseMixin",
+    "basic.mc89146.ChunkAccessMixin",
+    "basic.mc93018.AnimalMixin",
+    "gameplay.mc8187.MixinTreeFeature"
+  ]
+}
