@@ -24,11 +24,15 @@ _verify/maps/
 _verify/*.txt
 _verify/gradle.cmd
 
-# Upstream and third party jars that were used during the port. The one jar the
-# build actually needs is tracked under libs/, see the note in PORTING-NOTES.md.
+# Third party jars that were only used while porting. The one jar the build
+# actually compiles against lives in libs/ and IS tracked, because
+# build.gradle.kts resolves YACL from libs/ rather than from a Maven
+# coordinate. See PORTING-NOTES.md for how to replace it with a real
+# dependency if you would rather not vendor the binary.
 architectury-*.jar
 Debugify-*.jar
 yet_another_config_lib_v3-*.jar
+!libs/yet_another_config_lib_v3-*.jar
 
 # IDE
 .idea/
