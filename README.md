@@ -1,8 +1,8 @@
-# NeoBugify 1.21.1 — NeoForge port
+# NeoBugify — NeoForge port of debugify
 
-NeoForge 21.1.x build of NeoBugify, ported from the Fabric Debugify 1.21.1+1.0 jar
+NeoForge build of NeoBugify, ported from the Fabric Debugify
 (`Debugify-1.21.1+1.0.jar`, Loom/Fabric) whose sources come from
-`github.com/isXander/Debugify` branch `archive/1.21`.
+`github.com/isXander/Debugify.
 
 NeoBugify is not the original Debugify and is not affiliated with its author. It is
 distributed under the same license, the **GNU Lesser General Public License v3.0 only**
